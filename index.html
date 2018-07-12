@@ -10,6 +10,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
+  <div class="w3-top">
     <div class="w3-bar w3-black">
       <span class="branding w3-bar-item w3-mobile">Baytown iPhone Repair</span>
       <span class="w3-right w3-mobile">
@@ -17,9 +18,10 @@
         <a class="w3-bar-item w3-button w3-mobile w3-hover-green" href="#about">About</a>
         <a class="w3-bar-item w3-button w3-mobile w3-hover-green" href="#services">Services</a>
         <a class="w3-bar-item w3-button w3-mobile w3-hover-green" href="#contact">Contact Us</a>
-    </span>
+      </span>
     </div>
   </body>
+  </div>
       <!-- SHOWCASE -->
       <section class="showcase">
           <div class = "w3-container w3-center">
@@ -37,8 +39,117 @@
       <!-- End of SHOWCASE -->
 
     <!-- SECTION 1 -->
+    <section class="section w3-green w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="fa fa-home"></i>
+          <h2>Welcome Home</h2>
+            <p>Blah blah blah</p>
+      </div>
+    </section>
 
+    <!-- SECTION 2 -->
+    <section class="section w3-light-gray w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="fa fa-cog"></i>
+          <h2>Let's Begin</h2>
+            <p>Blah blah blah</p>
+      </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="w3-container">
+        <div class="w3-row-padding">
+          <div class="w3-col m5">
+            <img src="img/tech.jpg">
+          </div>
+            <div class="w3-col m7">
 
+              <!-- Who function -->
+              <button onclick="accFunction('what')" class=" w3-btn-block
+              w3-left-align">
+              What We Do</button>
+
+              <div id="what" class="w3-container w3-show">
+                  <h3> We Do It All </h3>
+                  <p>Some text..</p>
+              </div>
+
+              <!-- What function -->
+              <button onclick="accFunction('who')" class=" w3-btn-block
+              w3-left-align">
+              Who We Are</button>
+
+              <div id="who" class="w3-container w3-hide">
+                  <h3> We Are Baytown iPhone Repair </h3>
+                  <p>Some text..</p>
+              </div>
+
+              <!-- Where function -->
+              <button onclick="accFunction('where')" class=" w3-btn-block
+              w3-left-align">
+              Where We Are Located</button>
+
+              <div id="where" class="w3-container w3-hide">
+                  <h3> We Are In Baytown, Texas </h3>
+                  <p>Some text..</p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Services Heading -->
+    <section id="services" class="section w3-green w3-hover-opacity">
+      <div class="w3-container w3-center">
+          <h1 class="w3-text-shadow">OUR SERVICES</h1>
+            <p>Blah blah blah</p>
+      </div>
+    </section>
+
+    <!-- SERVICES Footer -->
+    <section class="section w3-light-grey">
+      <div class="w3-container w3-center">
+        <div class="w3-row">
+          <div class="w3-col m3">
+            <i class="fa fa-comment w3-green w3-padding-small
+            w3-round-xlarge"></i>
+              <h3> Internet Marketing </h3>
+              <p> blah blah blah </p>
+          </div>
+          <div class="w3-col m3">
+            <i class="fa fa-search w3-green w3-padding-small
+            w3-round-xlarge"></i>
+              <h3> SEO </h3>
+              <p> blah blah blah </p>
+      </div>
+
+      <div class="w3-col m3">
+        <i class="fa fa-cubes w3-green w3-padding-small
+        w3-round-xlarge"></i>
+          <h3> Software Development </h3>
+          <p> blah blah blah </p>
+      </div>
+
+      <div class="w3-col m3">
+          <i class="fa fa-cloud w3-green w3-padding-small
+          w3-round-xlarge"></i>
+            <h3> Cloud Hosting </h3>
+            <p> blah blah blah </p>
+      </div>
+
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script>
+      function accFunction(id) {
+        var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+}
+    </script>
   </body>
 </html>
