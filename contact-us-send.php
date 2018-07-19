@@ -14,10 +14,13 @@ if(isset($_POST['submit'])) {
     header("Location: contact-us-thank-you.html");
   }
 
+  if(empty($name) || empty($mailFrom)) {
+     header('Location: 404error.html');
+     exit(0);
+ }
 
-
-    else{
-      header('Location: 404error.html');
-      exit(0);
-    }
+ else{
+     header('Location: index.html');
+     exit(0);
+ }
  ?>
