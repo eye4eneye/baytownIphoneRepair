@@ -10,6 +10,10 @@
   color:#fff;
 }
 
+.showcase a{
+    margin-bottom: auto;
+}
+
 .showcase h1{
   font-size:40px;
   font-weight:700;
@@ -27,6 +31,10 @@
 .showcase p{
   font-size:16px;
   padding-bottom:20px;
+}
+
+.showcase img{
+  height:100px;
 }
 
 .section{
@@ -76,7 +84,7 @@
   }
 
   .showcase{
-    height:400px;
+    height:500px;
     padding:60px 0;
   }
 }
