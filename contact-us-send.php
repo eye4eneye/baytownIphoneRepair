@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
  }
 
  else{
-     header('Location: index.html');
+     header('Location: contact-us-thank-you.html');
      exit(0);
  }
  ?>
